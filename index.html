@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Руслан Абдурахманов — Product / Project manager</title>
+<meta name="description" content="Product / Project manager, команда YTG. Управление командами в геймдеве и веб-разработке, запуск и перестройка бизнеса. Опыт, проекты, навыки.">
+<meta property="og:title" content="Руслан Абдурахманов — Product / Project manager">
+<meta property="og:description" content="Product / Project manager, команда YTG. Управление командами в геймдеве и веб-разработке, запуск и перестройка бизнеса.">
+<meta property="og:image" content="https://na9asaki.github.io/daybreak.github.io/assets/games/myzay-0.jpg">
+<meta name="theme-color" content="#0b0b0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b0e;
+    --bg-2: #101015;
+    --surface: #14141a;
+    --surface-2: #1a1a22;
+    --text: #ececf1;
+    --text-2: #b9b9c4;
+    --muted: #7d7d8a;
+    --rule: #24242d;
+    --accent: #ff9a3d;
+    --accent-2: #ffc46b;
+    --accent-soft: rgba(255, 154, 61, .12);
+    --cool: #6f8cff;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--bg); }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Onest, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--accent); color: #140b02; }
+  a { color: var(--text); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; transition: color .15s, text-decoration-color .15s; }
+  a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  .mono, .meta, td .tech, .eyebrow, .nick { font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; position: relative; }
+  header > .wrap { z-index: 1; }
+
+  /* ---------- hero ---------- */
+  header { position: relative; padding: 96px 0 64px; overflow: hidden; }
+  header::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(600px 360px at 12% 0%, rgba(255, 154, 61, .20), transparent 70%),
+      radial-gradient(520px 320px at 90% 10%, rgba(111, 140, 255, .14), transparent 70%);
+  }
+  header::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(var(--rule) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: .45;
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 30% 0%, #000 20%, transparent 75%);
+            mask-image: radial-gradient(ellipse 80% 70% at 30% 0%, #000 20%, transparent 75%);
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-2);
+    padding: 5px 10px; border: 1px solid var(--rule); border-radius: 999px; background: rgba(20, 20, 26, .7);
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+  h1 {
+    font-family: "Inter Tight", Onest, sans-serif; font-weight: 600;
+    font-size: clamp(40px, 7vw, 64px); line-height: 1.05; letter-spacing: -.035em;
+    margin-top: 20px;
+  }
+  .id { display: flex; align-items: center; gap: 24px; margin-top: 24px; }
+  .id h1 { margin-top: 0; }
+  .avatar {
+    width: 112px; height: 112px; flex: none; object-fit: cover;
+    border-radius: 24px; border: 1px solid rgba(255, 154, 61, .5);
+    box-shadow: 0 0 0 4px var(--accent-soft), 0 12px 32px -10px rgba(255, 154, 61, .45);
+  }
+  @media (max-width: 560px) { .id { gap: 16px; } .avatar { width: 76px; height: 76px; border-radius: 18px; } }
+  .nick {
+    display: block; font-size: clamp(16px, 2.4vw, 20px); font-weight: 400; letter-spacing: 0;
+    color: var(--accent); margin-top: 6px;
+  }
+  .role { font-size: clamp(18px, 2.4vw, 22px); color: var(--text-2); margin-top: 12px; }
+  .role b { color: var(--text); font-weight: 600; }
+  .facts {
+    margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--rule); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden;
+  }
+  .fact { background: rgba(16, 16, 21, .85); padding: 16px 18px; }
+  .fact dt { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-family: "JetBrains Mono", monospace; }
+  .fact dd { margin-top: 6px; font-size: 15px; color: var(--text); }
+  .fact dd strong { font-family: "Inter Tight", sans-serif; font-weight: 600; font-size: 20px; color: var(--accent); letter-spacing: -.01em; }
+  @media (max-width: 720px) { .facts { grid-template-columns: 1fr; } }
+  .contacts { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
+
+  .pill {
+    display: inline-flex; align-items: center; justify-content: center; text-align: center;
+    padding: 8px 16px; border: 1px solid var(--rule); border-radius: 999px;
+    background: var(--surface); color: var(--text);
+    font-size: 14px; font-weight: 500; text-decoration: none; line-height: 1.3;
+    transition: border-color .15s, background .15s, color .15s, box-shadow .15s;
+  }
+  .pill:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .pill.primary { background: var(--accent); border-color: var(--accent); color: #1a0e02; font-weight: 600; }
+  .pill.primary:hover { background: var(--accent-2); border-color: var(--accent-2); color: #1a0e02; box-shadow: 0 0 0 4px var(--accent-soft); }
+
+  /* ---------- sections ---------- */
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--rule); }
+  h2 {
+    display: flex; align-items: center; gap: 14px;
+    font-family: "Inter Tight", Onest, sans-serif; font-weight: 600;
+    font-size: clamp(22px, 3vw, 28px); letter-spacing: -.025em; margin-bottom: 28px;
+  }
+  h2::before {
+    content: ""; width: 10px; height: 10px; flex: none; border-radius: 2px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    box-shadow: 0 0 14px rgba(255, 154, 61, .5);
+  }
+
+  /* ---------- games ---------- */
+  .games { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 680px) { .games { grid-template-columns: 1fr; } }
+  .game {
+    position: relative; display: flex; flex-direction: column;
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--rule); border-radius: 14px; overflow: hidden;
+    transition: border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .game:hover {
+    border-color: rgba(255, 154, 61, .45);
+    box-shadow: 0 18px 40px -18px rgba(255, 154, 61, .35);
+  }
+  .game .cover { display: block; position: relative; }
+  .slides { position: relative; aspect-ratio: 16 / 9; background: var(--bg-2); overflow: hidden; }
+  .slides img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    opacity: 0; transform: scale(1.04);
+    transition: opacity 1.2s ease, transform 5s ease-out;
+  }
+  .slides img.active { opacity: 1; transform: scale(1); }
+  .slides::after {
+    content: ""; position: absolute; inset: auto 0 0 0; height: 45%; pointer-events: none;
+    background: linear-gradient(to top, rgba(20, 20, 26, .9), transparent);
+  }
+  .dots { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: flex; gap: 5px; }
+  .dots span { width: 6px; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, .35); transition: width .3s, background .3s; }
+  .dots span.on { width: 18px; background: var(--accent); }
+  @media (prefers-reduced-motion: reduce) { .slides img { transition: none; transform: none; } }
+  .game .body { padding: 4px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+  .game h3 { font-family: "Inter Tight", Onest, sans-serif; font-size: 21px; font-weight: 600; letter-spacing: -.02em; }
+  .game .meta { font-size: 12px; color: var(--accent); margin-top: 4px; opacity: .9; }
+  .game p { font-size: 15px; margin-top: 10px; color: var(--text-2); flex: 1; }
+  .game .links { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* ---------- tables ---------- */
+  table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 15px; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; }
+  td { padding: 14px 18px; border-bottom: 1px solid var(--rule); vertical-align: top; color: var(--text-2); }
+  tr:last-child td { border-bottom: 0; }
+  tr { transition: background .15s; }
+  tr:hover { background: var(--surface); }
+  td:first-child { width: 270px; padding-right: 16px; color: var(--text); }
+  td:first-child a { font-weight: 600; }
+  td .tech { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .stack td:first-child { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--accent); letter-spacing: .02em; }
+  @media (max-width: 640px) {
+    table, tbody, tr, td { display: block; width: 100%; }
+    td { border: 0; padding: 0; }
+    tr { padding: 14px 16px; border-bottom: 1px solid var(--rule); }
+    tr:last-child { border-bottom: 0; }
+    td:first-child { width: auto; margin-bottom: 4px; }
+  }
+
+  .last { padding-bottom: 96px; }
+
+  /* ---------- single wide project card ---------- */
+  .games.one { grid-template-columns: 1fr; }
+  @media (min-width: 681px) {
+    .games.one .game { flex-direction: row; }
+    .games.one .cover { flex: 0 0 54%; }
+    .games.one .slides { height: 100%; }
+    .games.one .slides::after { display: none; }
+    .games.one .body { padding: 22px 24px; }
+  }
+  .game p.part { flex: none; color: var(--text); }
+  .game p.part b { color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Product / Project manager</span>
+    <div class="id">
+      <img class="avatar" src="assets/avatar.jpg" alt="Фото Руслана Абдурахманова" width="112" height="112">
+      <div>
+        <h1>Руслан Абдурахманов</h1>
+        <div class="nick">Daybreak</div>
+      </div>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt>Опыт</dt><dd><strong>1 год 11 мес.</strong> управления проектами, командами и собственным бизнесом</dd></div>
+      <div class="fact"><dt>Команда</dt><dd><strong>YTG</strong></dd></div>
+      <div class="fact"><dt>Направления</dt><dd>Геймдев, веб-разработка, запуск и перестройка бизнеса</dd></div>
+    </dl>
+    <div class="contacts">
+      <a class="pill primary" href="https://t.me/Daybreak_v" target="_blank" rel="noopener">Telegram</a>
+      <a class="pill" href="https://cultlab.tech/" target="_blank" rel="noopener">cultlab.tech</a>
+      <a class="pill" href="https://myindie.net/games/game/myzay_pqz" target="_blank" rel="noopener">MyIndie</a>
+    </div>
+  </div>
+</header>
+
+<section id="games">
+  <div class="wrap">
+    <h2>Проекты с геймджемов</h2>
+    <div class="games one">
+
+      <article class="game">
+        <a class="cover" href="https://myindie.net/games/game/myzay_pqz" target="_blank" rel="noopener"><div class="slides"><img src="assets/games/myzay-0.jpg" alt="MyZay — скриншот 1" class="active"><img src="assets/games/myzay-1.jpg" alt="MyZay — скриншот 2" loading="lazy"><img src="assets/games/myzay-2.jpg" alt="MyZay — скриншот 3" loading="lazy"><img src="assets/games/myzay-3.jpg" alt="MyZay — скриншот 4" loading="lazy"></div></a>
+        <div class="body">
+          <h3>MyZay</h3>
+          <div class="meta">ГеймДжем ВШЭ II · Аркада · Windows</div>
+          <p>Аркада о спасении зайцев: игрок управляет лодкой деда Мазая и подбирает тонущих зайцев.</p>
+          <p class="part"><b>Роль:</b> работа над проектом в составе команды и участие в питчинге — защите проекта.</p>
+          <div class="links"><a class="pill primary" href="https://myindie.net/games/game/myzay_pqz" target="_blank" rel="noopener">MyIndie</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Опыт</h2>
+    <table>
+      <tr>
+        <td><a href="https://cultlab.tech/" target="_blank" rel="noopener">Агентство веб-разработки и геймдева</a><span class="tech">Фаундер · июль 2026 — сейчас</span></td>
+        <td>Запустил с нуля два небольших агентства: веб-разработка сайтов под ключ и аутсорс геймдева для западных заказчиков (development, 3D, audio, co-development, full-cycle). Сформировал услуги и позиционирование, веду переговоры с клиентами, распределяю задачи между специалистами, выстроил внутренние процессы и документацию. Выполнен проект по аудиту игры и команды заказчика; общее портфолио команды подтолкнуло к выходу в Unity Asset Store.</td>
+      </tr>
+      <tr>
+        <td>SavePoint 2.0<span class="tech">Совладелец · апрель 2026 — сейчас</span></td>
+        <td>Компьютерный клуб, выкупленный для перестройки и роста выручки. Оценил сделку до покупки, сформировал план перезапуска: новое позиционирование, тарифы, зонирование и операционная модель. Управлял ремонтом и редизайном — бюджет, сроки, объём работ, риски. Перевёл управление на показатели, отчётность и бюджетирование; клуб работает в плюс.</td>
+      </tr>
+      <tr>
+        <td>Teppelin Studio<span class="tech">Project manager, продюсер · март — июль 2025</span></td>
+        <td>Удалённо руководил кросс-функциональной геймдев-командой из 5 человек в штате и 1 на аутсорсе. Выстроил систему работы и коммуникации: Agile, устав студии, таск-трекер, one-to-one и митинги; составлял ТЗ, бэклоги и roadmap роста для каждого сотрудника. Отвечал за найм, онбординг и менторство. Довёл проект до финала, несмотря на срыв сроков и замену ключевого сотрудника.</td>
+      </tr>
+      <tr>
+        <td>Shisha therapy<span class="tech">Старший менеджер · декабрь 2023 — май 2024</span></td>
+        <td>Лаунж-бар во Вьетнаме: управление всеми операционными процессами, переговоры на английском, стратегия заведения на сезон, эвенты на 20+ гостей. Пересмотрел условия с 3 ключевыми поставщиками и сэкономил 12% бюджета за год; запустил ребрендинг меню на 2 недели раньше плана.</td>
+      </tr>
+      <tr>
+        <td>Garment Solution<span class="tech">Основатель, операционный менеджер · июль — октябрь 2021</span></td>
+        <td>B2C-продажа редкой стритвир-одежды из Южной Кореи, команда из 4 человек. Выстроил с нуля полный цикл: поставщики, логистика, продажи, маркетинг, клиентский сервис. Более 50 продаж, успешный питч ключевому инвестору, сообщество вокруг бренда.</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Навыки</h2>
+    <table class="stack">
+      <tr><td>Управление проектами</td><td>Scrum, Agile, управление бэклогом, ТЗ и декомпозиция задач, roadmap, контроль сроков, бюджета и объёма работ</td></tr>
+      <tr><td>Команда</td><td>Найм и онбординг, наставничество, делегирование, управление конфликтами, one-to-one</td></tr>
+      <tr><td>Продукт и бизнес</td><td>Продюсирование, разработка стратегии развития, кастдев, риск-менеджмент, бюджетирование, переговоры и питчинг</td></tr>
+      <tr><td>ИИ-инструменты</td><td>Claude, GPT</td></tr>
+      <tr><td>Языки</td><td>Русский — родной, английский — C1</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="education" class="last">
+  <div class="wrap">
+    <h2>Образование</h2>
+    <table class="stack">
+      <tr><td>2024 · Высшее</td><td>РАНХиГС, Москва — Высшая школа финансов и менеджмента, направление «Менеджмент»</td></tr>
+    </table>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.slides').forEach(function (box, idx) {
+      var imgs = box.querySelectorAll('img');
+      if (imgs.length < 2) return;
+      var dots = document.createElement('div');
+      dots.className = 'dots';
+      imgs.forEach(function (_, k) {
+        var d = document.createElement('span');
+        if (k === 0) d.className = 'on';
+        dots.appendChild(d);
+      });
+      box.parentNode.appendChild(dots);
+      if (reduce) return;
+      var i = 0, paused = false, card = box.closest('.game');
+      card.addEventListener('mouseenter', function () { paused = true; });
+      card.addEventListener('mouseleave', function () { paused = false; });
+      setTimeout(function () {
+        setInterval(function () {
+          if (paused || document.hidden) return;
+          imgs[i].classList.remove('active'); dots.children[i].classList.remove('on');
+          i = (i + 1) % imgs.length;
+          imgs[i].classList.add('active'); dots.children[i].classList.add('on');
+        }, 4000);
+      }, idx * 700);
+    });
+  })();
+</script>
+</body>
+</html>
